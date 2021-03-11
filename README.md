@@ -1,5 +1,5 @@
-# ITP344X Week 6
+# ITP344X Week 8
 ## Topics:
-- Firebase Integration
+- 
 ## Recording:
 - 

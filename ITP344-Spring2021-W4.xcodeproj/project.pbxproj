@@ -17,6 +17,8 @@
 		D55ABD9C25D1EF0400131E1F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABD9B25D1EF0400131E1F /* SignInViewController.swift */; };
 		D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABD9F25D2047100131E1F /* UIExtensions.swift */; };
 		D55ABDA325D2284000131E1F /* PrioritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ABDA225D2284000131E1F /* PrioritiesViewController.swift */; };
+		D5B1BB7425FB05CB00921CEE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1BB7325FB05CB00921CEE /* ListViewController.swift */; };
+		D5B1BB7825FB14CC00921CEE /* FirestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1BB7725FB14CC00921CEE /* FirestoreHelper.swift */; };
 		D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC35025E48F85009500E6 /* SignUpViewController.swift */; };
 		D5DCC35925E4B10C009500E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */; };
 		D5DCC38125E4C02E009500E6 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */; };
@@ -38,6 +40,8 @@
 		D55ABD9B25D1EF0400131E1F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D55ABD9F25D2047100131E1F /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		D55ABDA225D2284000131E1F /* PrioritiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrioritiesViewController.swift; sourceTree = "<group>"; };
+		D5B1BB7325FB05CB00921CEE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D5B1BB7725FB14CC00921CEE /* FirestoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreHelper.swift; sourceTree = "<group>"; };
 		D5DCC35025E48F85009500E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D5DCC35825E4B10C009500E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		D5170F9125C8F8A100AAFD67 /* ITP344-Spring2021-W4 */ = {
 			isa = PBXGroup;
 			children = (
+				D5B1BB7225FB059B00921CEE /* List */,
 				D55ABD9E25D2046300131E1F /* Utilities */,
 				D55ABD9325D1ECAE00131E1F /* Onboarding */,
 				D5170F9225C8F8A100AAFD67 /* AppDelegate.swift */,
@@ -127,8 +132,17 @@
 			children = (
 				D55ABD9F25D2047100131E1F /* UIExtensions.swift */,
 				D5DCC38025E4C02E009500E6 /* SpinnerViewController.swift */,
+				D5B1BB7725FB14CC00921CEE /* FirestoreHelper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D5B1BB7225FB059B00921CEE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1BB7325FB05CB00921CEE /* ListViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,10 +261,12 @@
 			files = (
 				D55ABD9825D1EE1000131E1F /* BaseViewController.swift in Sources */,
 				D5170F9725C8F8A100AAFD67 /* ViewController.swift in Sources */,
+				D5B1BB7425FB05CB00921CEE /* ListViewController.swift in Sources */,
 				D5EED21C25EF4B010043F945 /* CustomTabBarController.swift in Sources */,
 				D5DCC35125E48F85009500E6 /* SignUpViewController.swift in Sources */,
 				D5170F9325C8F8A100AAFD67 /* AppDelegate.swift in Sources */,
 				D55ABDA025D2047100131E1F /* UIExtensions.swift in Sources */,
+				D5B1BB7825FB14CC00921CEE /* FirestoreHelper.swift in Sources */,
 				D55ABD9C25D1EF0400131E1F /* SignInViewController.swift in Sources */,
 				D55ABDA325D2284000131E1F /* PrioritiesViewController.swift in Sources */,
 				D5DCC38125E4C02E009500E6 /* SpinnerViewController.swift in Sources */,

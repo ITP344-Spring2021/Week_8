@@ -18,7 +18,10 @@ class CustomTabBarController: UITabBarController {
         let secondVC = SignInViewController()
         secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
         
-        viewControllers = [firstVC, secondVC]
+        let thirdVC = ListViewController()
+        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 2)
+        
+        viewControllers = [firstVC, secondVC, thirdVC]
     }
 
 }

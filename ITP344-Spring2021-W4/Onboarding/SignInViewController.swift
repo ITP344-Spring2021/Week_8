@@ -151,13 +151,22 @@ extension SignInViewController {
                 print(error.localizedDescription)
                 return
             }
-            
+            FirestoreHelper.shared.onUserSignIn { (error) in
+                print(error?.localizedDescription ?? "")
+                FirestoreHelper.shared.getUserDetails { (data, error) in
+                    if let error = error {
+                        print(error)
+                    } else {
+                        print(data)
+                    }
+                }
+            }
+            let options = UIWindow.TransitionOptions()
+            options.background = .solidColor(.systemBackground)
+            options.style = .easeOut
+            options.duration = 0.5
+            UIApplication.shared.windows.first?.set(rootViewController: CustomTabBarController(), options: options, nil)
         }
-        let options = UIWindow.TransitionOptions()
-        options.background = .solidColor(.systemBackground)
-        options.style = .easeOut
-        options.duration = 0.5
-        UIApplication.shared.windows.first?.set(rootViewController: CustomTabBarController(), options: options, nil)
 //        UIApplication.shared.windows.first?.rootViewController = PrioritiesViewController()
 //        let priorities = PrioritiesViewController()
 //        priorities.modalPresentationStyle = .fullScreen
